@@ -1,0 +1,110 @@
+:root {
+  --clr-green: #009200;
+  --clr-green-light: #00bd00;
+  --clr-danger: #cf2436;
+  --clr-card-bg: #f3f6f6;
+  --radius: 0.75rem;
+}
+
+/* ---------- card shell ---------- */
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #fff;
+}
+.shopping-card {
+  background: var(--clr-card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.06);
+  animation: fadeUp 0.55s cubic-bezier(0.25, 0.97, 0.53, 1.12) both;
+}
+@keyframes fadeUp {
+  0% {
+    transform: translateY(40px) scale(0.96);
+    opacity: 0;
+  }
+}
+
+/* ---------- thumbnail ---------- */
+.item-thumb {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+  max-width: 260px; /* prevents it from becoming huge on xl */
+}
+
+/* ---------- quantity buttons ---------- */
+.qty-btn {
+  --sz: 48px;
+  width: var(--sz);
+  height: var(--sz);
+  display: grid;
+  place-content: center;
+  background: var(--clr-green);
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+.qty-btn:hover {
+  background: var(--clr-green-light);
+  transform: scale(1.06);
+}
+.qty-number {
+  font-size: 1.4rem;
+  font-weight: 600;
+  width: 3ch;
+  text-align: center;
+}
+@media (max-width: 399px) {
+  /* shrink just on micro screens */
+  .qty-btn {
+    --sz: 40px;
+    font-size: 1rem;
+  }
+  .qty-number {
+    font-size: 1.2rem;
+  }
+}
+
+/* ---------- coloured buttons (lift + ripple) ---------- */
+.btn-green,
+.btn-danger {
+  position: relative;
+}
+
+.btn-danger:hover {
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+.btn-danger::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff33;
+  border-radius: inherit;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: transform 0.45s, opacity 0.45s;
+}
+
+.btn-danger:active::after {
+  opacity: 1;
+  transform: scale(1);
+  transition: 0s;
+}
+
+.btn-danger {
+  --bs-btn-bg: var(--clr-danger);
+  --bs-btn-border-color: var(--clr-danger);
+  --bs-btn-hover-bg: #e03a4b;
+  --bs-btn-hover-border-color: #e03a4b;
+}
+
+/* divider */
+.divider {
+  height: 1px;
+  background: #dee2e6;
+}

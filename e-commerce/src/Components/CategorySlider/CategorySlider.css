@@ -1,0 +1,28 @@
+.category-name {
+  font-size: 20.76px;
+  font-style: 400;
+  font-weight: 600;
+  color: #333333;
+  font-style: normal;
+  text-align: center;
+  padding: 6px 0;
+}
+
+.category-Card {
+  background: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dee2e6 !important;
+  margin: 0 5px; /* Add spacing between items */
+  /* margin-bottom: 35px; */
+}
+
+.category-Card:hover {
+  border-color: var(--main-color) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,38 @@
+.category-wrapper {
+  background-color: #f0f3f2;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.category-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.category-wrapper hr {
+  opacity: 0.3;
+  margin: 0.5rem 0 2rem;
+}
+.category-container {
+  margin-top: 110px !important;
+}
+.homeLink:hover,
+.categoriesLink:hover {
+  color: var(--main-color);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.categoryName {
+  color: var(--main-color);
+}
+.back-btn {
+  background-color: var(--main-color) !important;
+  width: 120px;
+  border: 1.4px solid var(--main-color) !important;
+  color: white !important;
+}
+
+.back-btn:hover {
+  background-color: white !important;
+  border-color: var(--main-color) !important;
+  color: var(--main-color) !important;
+}

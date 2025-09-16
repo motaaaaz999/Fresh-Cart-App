@@ -1,0 +1,72 @@
+.footer-section {
+  background-color: #f0f3f2;
+  padding: 40px 0;
+  margin-top: 100px;
+}
+.app-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+.app-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+/* Fix for the input and button */
+.input-group .form-control {
+  height: 46px;
+}
+.input-group .btn {
+  height: 46px;
+}
+.share-btn {
+  background-color: var(--main-color) !important;
+  color: white !important;
+  border: none;
+}
+.share-btn:hover {
+  background-color: var(--main-color) !important;
+  color: white;
+}
+.share-btn:focus {
+  color: white !important;
+}
+
+.partners-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+.payment-logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.payment-logos img {
+  height: 40px;
+  margin-right: 15px;
+  object-fit: contain;
+}
+.app-links {
+  margin-top: 30px;
+}
+.app-links h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+/* Fix for the app store images */
+.store-buttons img {
+  height: 50px;
+  width: 170px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.divider {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}

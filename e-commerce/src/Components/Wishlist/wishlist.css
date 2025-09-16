@@ -1,0 +1,96 @@
+.wishlist-container {
+  background-color: #f0f3f2 !important;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 110px;
+}
+
+.wishlist-heading {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.wishlist-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-5px) !important;
+}
+
+.product-img-container {
+  height: 200px; /* Back to original height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.product-info-top {
+  padding: 15px; /* Back to original padding */
+}
+
+.product-info-bottom {
+  padding: 0 15px 15px 15px;
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.product-title {
+  font-weight: 600;
+  font-size: 16px; /* Back to original font size */
+  margin-bottom: 5px;
+}
+
+.product-details {
+  color: #666;
+  font-size: 14px; /* Back to original font size */
+  margin-bottom: 15px;
+  height: 50px; /* Adjust this value based on your needs */
+  /* flex-grow: 1; */
+}
+
+/* Button styles */
+.btn-remove {
+  background-color: #dc3545 !important;
+  color: white !important;
+  border: none !important;
+  width: 100%;
+  padding: 8px; /* Back to original padding */
+  transition: background-color 0.2s ease;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-remove:hover {
+  background-color: #c82333 !important;
+  color: white !important;
+}
+
+.btn-remove:active,
+.btn-remove.active {
+  background-color: #bd2130 !important;
+  color: white !important;
+  border-color: #bd2130 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.product-grid {
+  margin-bottom: 20px;
+}

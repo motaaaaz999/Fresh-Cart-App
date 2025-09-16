@@ -1,0 +1,34 @@
+.product-Card img {
+  object-fit: cover;
+  width: 100% !important;
+  object-position: center;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.product-Card {
+  height: 420px;
+  margin-right: 10px;
+  border: 1px solid #ececec !important;
+  overflow: hidden;
+}
+
+/* swiper-styles.css */
+.mySwiper .swiper-pagination-bullet {
+  background-color: #999; /* Inactive bullet color */
+  opacity: 1;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: var(--main-color); /* Active bullet color */
+}
+
+.cart-btn {
+  background-color: var(--main-color) !important;
+  border: 1.5px solid var(--main-color) !important;
+}
+
+.cart-btn:hover {
+  background-color: white !important;
+  color: var(--main-color) !important;
+}

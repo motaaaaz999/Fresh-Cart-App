@@ -1,0 +1,108 @@
+.productCard img {
+  object-fit: cover;
+  object-position: center;
+  width: 100% !important;
+  height: 295px;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  border: solid 1px #ececec;
+}
+
+/* Add this to your CSS file */
+.pagination .page-item.active .page-link {
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+  color: white;
+}
+.pagination .page-link {
+  color: #6c757d; /* Bootstrap's text-muted color */
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #adb5bd; /* Even more muted color for disabled state */
+}
+
+.pagination .page-link:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.pagination .page-item:not(.active):not(.disabled) .page-link:hover {
+  color: #495057; /* Darker gray on hover */
+  background-color: #f8f9fa;
+}
+
+.productCard {
+  overflow: hidden;
+  border: solid 1.4px #ececec;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.productCard:hover {
+  border: solid 1.4px var(--main-color) !important;
+}
+
+.category-name p {
+  font-size: 14px;
+  margin-top: 40px;
+}
+.add-btn,
+.wish-btn {
+  background-color: white !important;
+  height: 35px;
+  width: 40px;
+  position: absolute;
+  transform: translateX(-200%);
+}
+.add-btn {
+  top: 3%;
+  left: 3%;
+  border: solid 1.4px var(--main-color) !important;
+}
+.add-btn:hover {
+  background-color: var(--main-color) !important;
+}
+.add-btn:hover i {
+  color: white;
+}
+.wish-btn {
+  display: flex !important;
+  justify-content: center !important;
+
+  top: 13.5%;
+  left: 3%;
+  border: solid 1.4px #cf0000 !important;
+}
+
+.add-btn i,
+.wish-btn i {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  width: 10px;
+}
+.wish-btn i {
+  color: #cf0000;
+}
+.add-btn i {
+  color: var(--main-color);
+}
+.productCard:hover .add-btn,
+.productCard:hover .wish-btn {
+  transform: translateX(0);
+  transition: all 0.3s;
+}
+.wish-btn:hover i,
+.add-btn:hover i {
+  color: white !important;
+}
+.wish-btn:hover {
+  background-color: #cf0000 !important;
+  transition: all 0.5s !important;
+}
+.add-btn:hover {
+  background-color: var(--main-color) !important;
+}
