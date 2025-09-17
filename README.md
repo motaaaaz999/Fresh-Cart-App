@@ -1,7 +1,6 @@
 # FreshCart 🛒
 
-**FreshCart** is my very first e-commerce project, built with **React.js**!  
-It is a modern web application designed to streamline the online shopping experience. From browsing and purchasing to managing orders, FreshCart leverages the latest technologies to deliver a **seamless and intuitive user experience**.
+**FreshCart** is a modern, feature-rich e-commerce platform built with **React.js**, designed to provide a **seamless and intuitive online shopping experience**. From product discovery and secure checkout to order management, FreshCart leverages cutting-edge technologies to deliver high performance, responsiveness, and a user-friendly interface for customers and merchants alike.
 
 ---
 
@@ -60,8 +59,7 @@ It is a modern web application designed to streamline the online shopping experi
 - Protected Routes with React Router DOM  
 - Toaster for notifications  
 - Slick Carousel  
-- JWT for secure authentication  
-- React Helmet for better SEO  
+- JWT for secure authentication   
 - Generate-react-cli  
 
 ---
