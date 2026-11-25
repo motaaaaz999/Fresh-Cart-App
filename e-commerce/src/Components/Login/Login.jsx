@@ -10,8 +10,8 @@ import '../Login/login.css'
 export default function Login() {
 
   const userData = {
-    email: '',
-    password: ''
+    email: 'demofreshcart@mailinator.com',
+    password: 'Demo12345'
   } //object to rcieve Form input values 
 
   const { setToken, myToken } = useContext(AuthContext)
